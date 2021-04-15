@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Demo</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header>
+      <!---------------Nav bar with bootstrap example #2 ------------------------->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Fox Brewery</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="carousels.html">Carousels</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="products.html">Menu</a>
+            <a class="dropdown-item" href="products.html">Beer</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="products.html">Wine</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+    </header>
+    <main class="productList container">
+      <h2>Beer Menu</h2>
+      <h3>Ale</h3>
+      <div class="product">
+        <span class="name ">Brown Ale</span><span class="price">$7</span>
+      </div>
+      <div class="product ">
+        <span class="name">Blonde Ale</span><span class="price">$7</span>
+      </div>
+      <div class="product">
+        <span class="name">Pale Ale</span><span class="price">$5</span>
+      </div>
+      <h3>Porter</h3>
+      <div class="product">
+        <span class="name">Anchor Porter</span><span class="price">$6</span>
+      </div>
+      <div class="product">
+        <span class="name">Pilsner</span><span class="price">$4</span>
+      </div>
+      <div class="product">
+        <span class="name">Gose</span><span class="price">$5</span>
+      </div>
+      <h3>Stout</h3>
+      <div class="product">
+        <span class="name">Praire Bomb</span><span class="price">$6</span>
+      </div>
+      <div class="product">
+        <span class="name">Guinness</span><span class="price">$5</span>
+      </div>
+      <div class="product">
+        <span class="name">Goose Island</span><span class="price">$7</span>
+      </div>
+      <h3>Lager</h3>
+      <div class="product">
+        <span class="name">Peroni</span><span class="price">$6</span>
+      </div>
+      <div class="product">
+        <span class="name">Pilsner</span><span class="price">$5</span>
+      </div>
+      <div class="product">
+        <span class="name">Shiner Bock</span><span class="price">$6</span>
+      </div>
+    </main>
+    <footer class="d-flex justify-content-center">
+      <p> Advanced Web Design | &#169; Karon Fox</p>
+
+    </footer>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        $('[data-toggle="popover"]').popover()
+      });
+    </script>
+  
+  </body>
+</html>
