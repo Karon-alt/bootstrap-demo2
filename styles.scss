@@ -1,0 +1,115 @@
+@import 'variables';
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+/*-----------------------------------------menu page-------------------------------*/
+
+/*-------------SASS Variables------------*/
+$ww_green:   #5D814C;
+$ww_mustard: #FFDB58;
+$ww_red:     #931009;
+$ww_orange:  #C48D54;
+$ww_almond:  #F1E4D6;
+
+body{
+  background-color: $ww_almond;
+
+}
+header{
+  background-color: white;
+
+}
+.productList {
+                width: 700px;
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 20px;
+                padding: 5%;
+}
+
+
+/*-------------use nesting of the class .product to call other classes within------------*/
+.product {
+
+
+   .price {
+                    float: right;
+    } }
+h2 {
+  color: $ww_green;
+}
+h3 {
+  padding-top:2%;
+  color:$ww_red;
+
+}
+span {
+  color:$ww_orange;
+}
+.dropdown-item{
+  color:$ww_orange;
+  font-weight: bold;
+  border-bottom: 1px dashed rgb(95, 117, 117);
+}
+.dropdown-item:hover{
+  background-color: $ww_mustard;
+}
+/*---------------SASS example of Extend/Inheritance Index page article-----------*/
+.town {
+  background-color: #BDB76B;
+  color: #556B2F;
+  font-variant: small-caps;
+}
+.other-town {
+  @extend.town;
+  background-color: #6B8E23;
+  color: white;
+}
+h2.card-header {
+  text-align: center;
+}
+/*---------------SASS example of Interpolation -----------
+Using the variable stated above to print out the hex codes in css
+$ww_green:   #5D814C;
+$ww_mustard: #FFDB58;
+$ww_red:     #931009;
+$ww_orange:  #C48D54;
+$ww_almond:  #F1E4D6;  ---*/
+
+/**
+Fox Brewery Color Palette:
+Green: #{$ww_green}
+Mustard: #{$ww_mustard}
+TomatoRed: #{$ww_red}
+Orange: #{$ww_orange}
+Background: #{$ww_almond}
+**/
+
+/*---------------SASS example of Operator -----------*/
+
+.list-group-item.example {
+   font-size: 16px*2;
+}
+
+.operatorExample {
+  height: (500px/2);
+  width: (350px/2)
+}
+
+section.container.row,  {
+  padding-top: (8rem/2);
+}
+/*---------------SASS/SCSS Technique that that uses a clip-path to show certain parts of an image -----------*/
+.card-img-top {
+  clip-path: polygon(100% 0, 100% 70%, 60% 100%, 0 60%);
+}
+/* Media Querey for phone size screen   s */
+
+@media screen and (max-width: 479px) {
+  .dropdown-item {
+                   width: 40%;
+               }
+.sodaList{
+  font-size:12px;
+}
+}
